@@ -2,14 +2,19 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-public class Main {
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.Socket;
+
+public class Menu {
 
     private JFrame frame;
     private JLabel label;
     private JButton button1;
     private JButton button2;
 
-    public Main() {
+    public Menu() {
         frame = new JFrame("Gioco del trees");
         frame.setSize(400, 400);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -40,11 +45,15 @@ public class Main {
         frame.add(label, BorderLayout.CENTER);
         frame.add(button1, BorderLayout.NORTH);
         frame.add(button2, BorderLayout.SOUTH);
-
         frame.setVisible(true);
     }
 
+
+
+
+
+
     public static void main(String[] args) {
-        new Main();
+        new Menu();
     }
 }
