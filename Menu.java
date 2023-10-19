@@ -9,24 +9,26 @@ import java.net.Socket;
 
 public class Menu {
 
-    private JFrame frame;
-    private JLabel label;
-    private JButton button1;
-    private JButton button2;
+
 
     public Menu() {
+        JFrame frame;
+        JLabel label;
+        JButton button1;
+        JButton button2;
+
         frame = new JFrame("Gioco del trees");
         frame.setSize(400, 400);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        label = new JLabel("Cosa vuoi fare");
-        label.setFont(new Font("Arial", Font.PLAIN, 24));
+        label = new JLabel("Cosa vuoi fare?");
 
         button1 = new JButton("Hosta partita");
         button1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 label.setText("Premuto bottone 1");
+                
             }
         });
 
@@ -38,13 +40,9 @@ public class Menu {
             }
         });
 
-        // Posiziona i bottoni negli angoli della finestra, senza toccarli
-        button1.setBounds(0, frame.getHeight() - 50, 100, 50);
-        button2.setBounds(frame.getWidth() - 100, 0, 50, 100);
-
-        frame.add(label, BorderLayout.CENTER);
-        frame.add(button1, BorderLayout.NORTH);
-        frame.add(button2, BorderLayout.SOUTH);
+        frame.add(label, BorderLayout.NORTH);
+        frame.add(button1, BorderLayout.EAST);
+        frame.add(button2, BorderLayout.WEST);
         frame.setVisible(true);
     }
 
