@@ -7,14 +7,14 @@ import java.io.IOException;
 public class Menu {
 
     public Menu() {
-        JFrame frame;
+        JFrame framemenu, framegioco;
         JLabel label;
         JButton buttoneserver;
         JButton buttoneclient;
 
-        frame = new JFrame("Gioco del trees");
-        frame.setSize(400, 400);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        framemenu = new JFrame("Gioco del trees");
+        framemenu.setSize(400, 400);
+        framemenu.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         label = new JLabel("Cosa vuoi fare?");
 
@@ -44,10 +44,23 @@ public class Menu {
             }
         });
 
-        frame.add(label, BorderLayout.NORTH);
-        frame.add(buttoneserver, BorderLayout.EAST);
-        frame.add(buttoneclient, BorderLayout.WEST);
-        frame.setVisible(true);
+        framemenu.add(label, BorderLayout.NORTH);
+        framemenu.add(buttoneserver, BorderLayout.EAST);
+        framemenu.add(buttoneclient, BorderLayout.WEST);
+        framemenu.setVisible(true);
+
+        framegioco = new JFrame("Gioco del verooooo otrres");
+        framegioco.setSize(400, 400);
+        framegioco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        framegioco.setVisible(true);
+
+        // Cerchi_prova.paintComponent(framegioco.getGraphics());
+        framegioco.add(new MyPanel());
+        // framegioco.add(Disegno);
+
+        framegioco.pack();
+
     }
 
     public static void main(String[] args) {
