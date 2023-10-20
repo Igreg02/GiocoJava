@@ -5,7 +5,7 @@ import java.net.Socket;
 
 public class Client {
 
-    public static void main(String[] args) throws IOException {
+    public static void start() throws IOException {
         Socket socket = new Socket("localhost", 8080);
         OutputStream outputStream = socket.getOutputStream();
         outputStream.write("Messaggio dal client".getBytes());
