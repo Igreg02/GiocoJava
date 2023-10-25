@@ -7,7 +7,7 @@ import java.io.IOException;
 public class Menu {
 
     public Menu() {
-        JFrame framemenu, framegioco;
+        JFrame framemenu;
         JLabel label;
         JButton buttoneserver;
         JButton buttoneclient;
@@ -48,7 +48,7 @@ public class Menu {
         framemenu.add(buttoneserver, BorderLayout.EAST);
         framemenu.add(buttoneclient, BorderLayout.WEST);
         framemenu.setVisible(true);
-
+/*
         framegioco = new JFrame("Gioco del verooooo otrres");
         framegioco.setSize(400, 400);
         framegioco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -60,7 +60,7 @@ public class Menu {
         // framegioco.add(Disegno);
 
         framegioco.pack();
-
+ */
     }
 
     public static void main(String[] args) {

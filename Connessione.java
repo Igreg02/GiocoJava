@@ -23,7 +23,7 @@ public class Connessione {
     public static void Client() throws IOException {
         Socket socket = new Socket("localhost", 8080);
         OutputStream outputStream = socket.getOutputStream();
-        outputStream.write("Messaggio dal client".getBytes());
+        outputStream.write("Messaggio dal client il robbie salta sulle cappelle".getBytes());
         InputStream inputStream = socket.getInputStream();
         byte[] bytes = new byte[1024];
         int length = inputStream.read(bytes);
