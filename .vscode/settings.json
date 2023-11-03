@@ -1,0 +1,13 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/home/greg/Scaricati/buffer/javafx.controls.jar",
+        "/home/greg/Scaricati/buffer/javafx.fxml.jar",
+        "/home/greg/Scaricati/buffer/javafx.media.jar",
+        "/home/greg/Scaricati/buffer/javafx.web.jar",
+        "/home/greg/Scaricati/buffer/javafx-swt.jar",
+        "/home/greg/Scaricati/buffer/javafx.base.jar",
+        "/home/greg/Scaricati/buffer/javafx.graphics.jar",
+        "/home/greg/Scaricati/buffer/javafx.swing.jar"
+    ]
+}

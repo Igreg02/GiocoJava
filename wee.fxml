@@ -5,27 +5,27 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox style="-fx-background-color: Black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<VBox style="-fx-background-color: Black;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
    <children>
       <BorderPane prefHeight="240.0" prefWidth="800.0" style="-fx-background-color: black;">
          <left>
             <Pane maxHeight="240.0" maxWidth="240.0" prefHeight="240.0" prefWidth="240.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
                <children>
-                  <Button layoutX="89.0" layoutY="108.0" mnemonicParsing="false" text="Button" textFill="RED" />
+                  <Button fx:id="Button1" layoutX="89.0" layoutY="108.0" mnemonicParsing="false" onAction="#premuto" text="Button" textFill="RED" />
                </children>
             </Pane>
          </left>
          <center>
             <Pane maxHeight="240.0" maxWidth="240.0" prefHeight="240.0" prefWidth="240.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
                <children>
-                  <Button layoutX="89.0" layoutY="108.0" mnemonicParsing="false" text="Button" />
+                  <Button fx:id="Button2" layoutX="89.0" layoutY="108.0" mnemonicParsing="false" text="Button" />
                </children>
             </Pane>
          </center>
          <right>
             <Pane maxHeight="240.0" maxWidth="240.0" prefHeight="240.0" prefWidth="240.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
                <children>
-                  <Button layoutX="89.0" layoutY="108.0" mnemonicParsing="false" text="Button" />
+                  <Button fx:id="Button3" layoutX="89.0" layoutY="108.0" mnemonicParsing="false" text="Button" />
                </children>
             </Pane>
          </right>
@@ -35,21 +35,21 @@
          <left>
             <Pane maxHeight="240.0" maxWidth="240.0" prefHeight="240.0" prefWidth="240.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
                <children>
-                  <Button layoutX="89.0" layoutY="108.0" mnemonicParsing="false" text="Button" />
+                  <Button fx:id="Button4" layoutX="89.0" layoutY="108.0" mnemonicParsing="false" text="Button" />
                </children>
             </Pane>
          </left>
          <center>
             <Pane maxHeight="240.0" maxWidth="240.0" prefHeight="240.0" prefWidth="240.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
                <children>
-                  <Button layoutX="89.0" layoutY="108.0" mnemonicParsing="false" text="Button" />
+                  <Button fx:id="Button5" layoutX="89.0" layoutY="108.0" mnemonicParsing="false" text="Button" />
                </children>
             </Pane>
          </center>
          <right>
             <Pane maxHeight="240.0" maxWidth="240.0" prefHeight="240.0" prefWidth="240.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
                <children>
-                  <Button layoutX="89.0" layoutY="108.0" mnemonicParsing="false" text="Button" />
+                  <Button fx:id="Button6" layoutX="89.0" layoutY="108.0" mnemonicParsing="false" text="Button" />
                </children>
             </Pane>
          </right>
@@ -59,21 +59,21 @@
          <left>
             <Pane maxHeight="240.0" maxWidth="240.0" prefHeight="240.0" prefWidth="240.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
                <children>
-                  <Button layoutX="89.0" layoutY="108.0" mnemonicParsing="false" text="Button" />
+                  <Button fx:id="Button7" layoutX="89.0" layoutY="108.0" mnemonicParsing="false" text="Button" />
                </children>
             </Pane>
          </left>
          <center>
             <Pane maxHeight="240.0" maxWidth="240.0" prefHeight="240.0" prefWidth="240.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
                <children>
-                  <Button layoutX="89.0" layoutY="108.0" mnemonicParsing="false" text="Button" />
+                  <Button fx:id="Button8" layoutX="89.0" layoutY="108.0" mnemonicParsing="false" text="Button" />
                </children>
             </Pane>
          </center>
          <right>
             <Pane maxHeight="240.0" maxWidth="240.0" prefHeight="240.0" prefWidth="240.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
                <children>
-                  <Button layoutX="89.0" layoutY="108.0" mnemonicParsing="false" text="Button" />
+                  <Button fx:id="Button9" layoutX="89.0" layoutY="108.0" mnemonicParsing="false" text="Button" />
                </children>
             </Pane>
          </right>
